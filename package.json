@@ -1,8 +1,8 @@
 {
   "name": "react-introduction-101",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
-  "main": "lib/index.js",
+  "main": "index.js",
   "devDependencies": {
     "autoprefixer": "6.4.1",
     "babel-cli": "^6.18.0",
@@ -91,7 +91,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "build:lib": "node scripts/buildLib.js",
-    "build:commonjs": "mkdir lib && cross-env BABEL_ENV=commonjs babel src/ExportEditorApp.js --out-file lib/index.js",
+    "build:commonjs": "cross-env BABEL_ENV=commonjs babel src/ExportEditorApp.js --out-file index.js",
     "test": "node scripts/test.js --env=jsdom",
     "deploy": "npm run build && gh-pages -d build",
     "prepublish": "npm run build:commonjs"
