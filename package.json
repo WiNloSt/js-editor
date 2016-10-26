@@ -2,6 +2,7 @@
   "name": "react-introduction-101",
   "version": "0.1.0",
   "private": true,
+  "main": "lib/JsEditor.js",
   "devDependencies": {
     "autoprefixer": "6.4.1",
     "babel-core": "6.14.0",
@@ -66,8 +67,10 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
+    "build:lib": "node scripts/buildLib.js",
     "test": "node scripts/test.js --env=jsdom",
-    "deploy": "npm run build && gh-pages -d build"
+    "deploy": "npm run build && gh-pages -d build",
+    "prepublish": "npm run build:lib"
   },
   "jest": {
     "moduleFileExtensions": [
