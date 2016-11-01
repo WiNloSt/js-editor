@@ -119,5 +119,19 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "style": "lib/style.css"
+  "style": "lib/style.css",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WiNloSt/js-editor.git"
+  },
+  "keywords": [
+    "editor"
+  ],
+  "author": "Mahatthana Kelvin Nomsawadi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WiNloSt/js-editor/issues"
+  },
+  "homepage": "https://github.com/WiNloSt/js-editor#readme"
 }
