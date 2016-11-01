@@ -74,6 +74,7 @@
     "url-loader": "0.5.7",
     "webpack": "1.13.2",
     "webpack-dev-server": "1.16.1",
+    "webpack-node-externals": "^1.5.4",
     "whatwg-fetch": "1.0.0",
     "worker-loader": "^0.7.1"
   },
@@ -90,6 +91,7 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
+    "build" : "node scripts/build.js",
     "build:lib": "cross-env NODE_ENV=production webpack --config=config/webpack.config.lib.js",
     "build:commonjs": "cross-env BABEL_ENV=commonjs babel src/ExportEditorApp.js --out-file index.js",
     "test": "node scripts/test.js --env=jsdom",

@@ -10,10 +10,10 @@ import configureWorker from './handleWorker'
 const store = configureStore()
 configureWorker(store)
 
-const enhancedApp = (
+const JsEditor = () => (
     <Provider store={store}>
       <App />
     </Provider>
 )
 
-export default enhancedApp
+export default JsEditor
