@@ -9,6 +9,4 @@ const libConfig = Object.assign({}, prodConfig, {
   })
 })
 
-console.log(libConfig.output)
-
 module.exports = libConfig
