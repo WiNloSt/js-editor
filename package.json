@@ -1,6 +1,6 @@
 {
   "name": "js-editor",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "private": true,
   "main": "lib/index.js",
   "devDependencies": {
@@ -95,7 +95,7 @@
     "build:commonjs": "cross-env BABEL_ENV=commonjs babel src/ExportEditorApp.js --out-file index.js",
     "test": "node scripts/test.js --env=jsdom",
     "deploy": "npm run build && gh-pages -d build",
-    "prepublish": "npm run build:lib"
+    "prepublish": "rm -rf lib && npm run build:lib"
   },
   "jest": {
     "moduleFileExtensions": [
