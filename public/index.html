@@ -55,15 +55,6 @@
       }(window.location))
     </script>
     <!-- End Single Page Apps for GitHub Pages -->
-
-    <% if(process.env.NODE_ENV === 'production'){ %>
-      <!-- HTTPS redirect -->
-      <script>
-        if (window.location.protocol !== "https:") {
-          window.location.protocol = "https:"
-        }
-      </script>
-    <% } %>
   </head>
   <body>
     <div id="root"></div>
